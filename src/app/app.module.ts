@@ -9,6 +9,7 @@ import { LoginComponent } from './general/login/login.component';
 import { ProductsComponent } from './general/products/products.component';
 
 import { AppRoutingModule } from '../app/app-routing/app-routing.module';
+import { NotFoundComponent } from './general/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AppRoutingModule } from '../app/app-routing/app-routing.module';
     HeaderComponent,
     RegisterComponent,
     LoginComponent,
-    ProductsComponent
+    ProductsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
