@@ -1,0 +1,22 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.container-products {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+@media (max-width: 975px) {
+    .container-products {
+        flex-direction: column;
+    }
+    .filters-aside {
+        width: 100%;
+    }
+}
+
+.filters-aside {
+    width: 280px;
+}
