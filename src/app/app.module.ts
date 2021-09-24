@@ -10,6 +10,7 @@ import { ProductsComponent } from './general/products/products.component';
 
 import { AppRoutingModule } from '../app/app-routing/app-routing.module';
 import { NotFoundComponent } from './general/not-found/not-found.component';
+import { HomeComponent } from './general/home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NotFoundComponent } from './general/not-found/not-found.component';
     RegisterComponent,
     LoginComponent,
     ProductsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
