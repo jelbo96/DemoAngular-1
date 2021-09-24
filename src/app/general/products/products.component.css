@@ -8,6 +8,25 @@ body {
     padding: 20px;
 }
 
+.filters-aside {
+    width: 280px;
+    transition: ease-in-out 0.2s;
+}
+
+.sub-categories {
+    margin-left: 20px;
+}
+
+.img-container-card {
+    text-align: center;
+}
+
+.img-product {
+    max-width: 225px;
+    max-height: 250px;
+    width: 100%;
+}
+
 @media (max-width: 975px) {
     .container-products {
         flex-direction: column;
@@ -15,8 +34,4 @@ body {
     .filters-aside {
         width: 100%;
     }
-}
-
-.filters-aside {
-    width: 280px;
 }

@@ -16,61 +16,32 @@
         <!-- Barra izquierda (aside) -->
         <div class="flex-shrink-0 p-3 bg-white filters-aside">
             <a href=" / " class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom ">
-                <svg class="bi me-2 " width="30 " height="24 ">
-                    <use xlink:href="#bootstrap "></use>
-                </svg>
-                <span class="fs-5 fw-semibold ">Collapsible</span>
+
+                <span class="fs-5 fw-semibold ">Filtrar por Categoria:</span>
             </a>
             <ul class="list-unstyled ps-0 ">
                 <li class="mb-1 ">
-                    <button class="btn btn-toggle align-items-center rounded " data-bs-toggle="collapse " data-bs-target="#home-collapse " aria-expanded="true ">
-                        Home
-                    </button>
-                    <div class="collapse show " id="home-collapse " style=" ">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
-                            <li><a href="# " class="link-dark rounded ">Overview</a></li>
-                            <li><a href="# " class="link-dark rounded ">Updates</a></li>
-                            <li><a href="# " class="link-dark rounded ">Reports</a></li>
+                    <h6>
+                        Categoría 1
+                    </h6>
+                    <div class="sub-categories">
+                        <ul class=" btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 1</a></li>
+                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 2</a></li>
+                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 3</a></li>
                         </ul>
                     </div>
                 </li>
+
                 <li class="mb-1 ">
-                    <button class="btn btn-toggle align-items-center rounded collapsed " data-bs-toggle="collapse " data-bs-target="#dashboard-collapse " aria-expanded="false ">
-                        Dashboard
-                    </button>
-                    <div class="collapse " id="dashboard-collapse " style=" ">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
-                            <li><a href="# " class="link-dark rounded ">Overview</a></li>
-                            <li><a href="# " class="link-dark rounded ">Weekly</a></li>
-                            <li><a href="# " class="link-dark rounded ">Monthly</a></li>
-                            <li><a href="# " class="link-dark rounded ">Annually</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="mb-1 ">
-                    <button class="btn btn-toggle align-items-center rounded collapsed " data-bs-toggle="collapse " data-bs-target="#orders-collapse " aria-expanded="false ">
-                        Orders
-                    </button>
-                    <div class="collapse " id="orders-collapse " style=" ">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
-                            <li><a href="# " class="link-dark rounded ">New</a></li>
-                            <li><a href="# " class="link-dark rounded ">Processed</a></li>
-                            <li><a href="# " class="link-dark rounded ">Shipped</a></li>
-                            <li><a href="# " class="link-dark rounded ">Returned</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="border-top my-3 "></li>
-                <li class="mb-1 ">
-                    <button class="btn btn-toggle align-items-center rounded collapsed " data-bs-toggle="collapse " data-bs-target="#account-collapse " aria-expanded="false ">
-                        Account
-                    </button>
-                    <div class="collapse " id="account-collapse " style=" ">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
-                            <li><a href="# " class="link-dark rounded ">New...</a></li>
-                            <li><a href="# " class="link-dark rounded ">Profile</a></li>
-                            <li><a href="# " class="link-dark rounded ">Settings</a></li>
-                            <li><a href="# " class="link-dark rounded ">Sign out</a></li>
+                    <h6>
+                        Categoría 2
+                    </h6>
+                    <div class="sub-categories">
+                        <ul class=" btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 4</a></li>
+                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 5</a></li>
+                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 6</a></li>
                         </ul>
                     </div>
                 </li>
@@ -78,189 +49,164 @@
         </div>
 
         <!-- Barra derecha (productos) -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
-            <div class="col ">
-                <div class="card shadow-sm ">
-                    <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
-                        <title>Placeholder</title>
-                        <rect width="100% " height="100% " fill="#55595c "></rect><text x="50% " y="50% "
-                            fill="#eceeef " dy=".3em ">Thumbnail</text>
-                    </svg>
+        <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3 g-3 ">
 
-                    <div class="card-body ">
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center ">
-                            <div class="btn-group ">
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+            <!-- PRODUCTO -->
+            <div class=" col ">
+                <div class=" card shadow-sm ">
+                    <div class=" card-body ">
+                        <div class="img-container-card">
+                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
+                        </div>
+
+                        <p class=" card-text">Peluche homero 20cm.
+                        </p>
+                        <div class=" d-flex justify-content-between align-items-center ">
+                            <h4>$9.990</h4>
+                            <div class=" btn-group ">
+                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
+                                    carro</button>
                             </div>
-                            <small class="text-muted ">9 mins</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col ">
-                <div class="card shadow-sm ">
-                    <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
-                        <title>Placeholder</title>
-                        <rect width="100% " height="100% " fill="#55595c "></rect><text x="50% " y="50% "
-                            fill="#eceeef " dy=".3em ">Thumbnail</text>
-                    </svg>
+            <!-- FIN PRODUCTO -->
 
-                    <div class="card-body ">
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center ">
-                            <div class="btn-group ">
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+
+            <!-- PRODUCTO -->
+            <div class=" col ">
+                <div class=" card shadow-sm ">
+                    <div class=" card-body ">
+                        <div class="img-container-card">
+                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
+                        </div>
+
+                        <p class=" card-text">Peluche homero 20cm.
+                        </p>
+                        <div class=" d-flex justify-content-between align-items-center ">
+                            <h4>$9.990</h4>
+                            <div class=" btn-group ">
+                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
+                                    carro</button>
                             </div>
-                            <small class="text-muted ">9 mins</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col ">
-                <div class="card shadow-sm ">
-                    <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
-                        <title>Placeholder</title>
-                        <rect width="100% " height="100% " fill="#55595c "></rect><text x="50% " y="50% "
-                            fill="#eceeef " dy=".3em ">Thumbnail</text>
-                    </svg>
+            <!-- FIN PRODUCTO -->
 
-                    <div class="card-body ">
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center ">
-                            <div class="btn-group ">
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+
+            <!-- PRODUCTO -->
+            <div class=" col ">
+                <div class=" card shadow-sm ">
+                    <div class=" card-body ">
+                        <div class="img-container-card">
+                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
+                        </div>
+
+                        <p class=" card-text">Peluche homero 20cm.
+                        </p>
+                        <div class=" d-flex justify-content-between align-items-center ">
+                            <h4>$9.990</h4>
+                            <div class=" btn-group ">
+                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
+                                    carro</button>
                             </div>
-                            <small class="text-muted ">9 mins</small>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- FIN PRODUCTO -->
 
-            <div class="col ">
-                <div class="card shadow-sm ">
-                    <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
-                        <title>Placeholder</title>
-                        <rect width="100% " height="100% " fill="#55595c "></rect><text x="50% " y="50% "
-                            fill="#eceeef " dy=".3em ">Thumbnail</text>
-                    </svg>
+            <!-- PRODUCTO -->
+            <div class=" col ">
+                <div class=" card shadow-sm ">
+                    <div class=" card-body ">
+                        <div class="img-container-card">
+                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
+                        </div>
 
-                    <div class="card-body ">
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center ">
-                            <div class="btn-group ">
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+                        <p class=" card-text">Peluche homero 20cm.
+                        </p>
+                        <div class=" d-flex justify-content-between align-items-center ">
+                            <h4>$9.990</h4>
+                            <div class=" btn-group ">
+                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
+                                    carro</button>
                             </div>
-                            <small class="text-muted ">9 mins</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col ">
-                <div class="card shadow-sm ">
-                    <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
-                        <title>Placeholder</title>
-                        <rect width="100% " height="100% " fill="#55595c "></rect><text x="50% " y="50% "
-                            fill="#eceeef " dy=".3em ">Thumbnail</text>
-                    </svg>
+            <!-- FIN PRODUCTO -->
 
-                    <div class="card-body ">
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center ">
-                            <div class="btn-group ">
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+            <!-- PRODUCTO -->
+            <div class=" col ">
+                <div class=" card shadow-sm ">
+                    <div class=" card-body ">
+                        <div class="img-container-card">
+                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
+                        </div>
+
+                        <p class=" card-text">Peluche homero 20cm.
+                        </p>
+                        <div class=" d-flex justify-content-between align-items-center ">
+                            <h4>$9.990</h4>
+                            <div class=" btn-group ">
+                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
+                                    carro</button>
                             </div>
-                            <small class="text-muted ">9 mins</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col ">
-                <div class="card shadow-sm ">
-                    <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
-                        <title>Placeholder</title>
-                        <rect width="100% " height="100% " fill="#55595c "></rect><text x="50% " y="50% "
-                            fill="#eceeef " dy=".3em ">Thumbnail</text>
-                    </svg>
+            <!-- FIN PRODUCTO -->
 
-                    <div class="card-body ">
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center ">
-                            <div class="btn-group ">
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+            <!-- PRODUCTO -->
+            <div class=" col ">
+                <div class=" card shadow-sm ">
+                    <div class=" card-body ">
+                        <div class="img-container-card">
+                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
+                        </div>
+
+                        <p class=" card-text">Peluche homero 20cm.
+                        </p>
+                        <div class=" d-flex justify-content-between align-items-center ">
+                            <h4>$9.990</h4>
+                            <div class=" btn-group ">
+                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
+                                    carro</button>
                             </div>
-                            <small class="text-muted ">9 mins</small>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- FIN PRODUCTO -->
 
-            <div class="col ">
-                <div class="card shadow-sm ">
-                    <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
-                        <title>Placeholder</title>
-                        <rect width="100% " height="100% " fill="#55595c "></rect><text x="50% " y="50% "
-                            fill="#eceeef " dy=".3em ">Thumbnail</text>
-                    </svg>
+            <!-- PRODUCTO -->
+            <div class=" col ">
+                <div class=" card shadow-sm ">
+                    <div class=" card-body ">
+                        <div class="img-container-card">
+                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
+                        </div>
 
-                    <div class="card-body ">
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center ">
-                            <div class="btn-group ">
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+                        <p class=" card-text">Peluche homero 20cm.
+                        </p>
+                        <div class=" d-flex justify-content-between align-items-center ">
+                            <h4>$9.990</h4>
+                            <div class=" btn-group ">
+                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
+                                    carro</button>
                             </div>
-                            <small class="text-muted ">9 mins</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col ">
-                <div class="card shadow-sm ">
-                    <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
-                        <title>Placeholder</title>
-                        <rect width="100% " height="100% " fill="#55595c "></rect><text x="50% " y="50% "
-                            fill="#eceeef " dy=".3em ">Thumbnail</text>
-                    </svg>
+            <!-- FIN PRODUCTO -->
 
-                    <div class="card-body ">
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center ">
-                            <div class="btn-group ">
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
-                            </div>
-                            <small class="text-muted ">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col ">
-                <div class="card shadow-sm ">
-                    <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false ">
-                        <title>Placeholder</title>
-                        <rect width="100% " height="100% " fill="#55595c "></rect><text x="50% " y="50% "
-                            fill="#eceeef " dy=".3em ">Thumbnail</text>
-                    </svg>
-
-                    <div class="card-body ">
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center ">
-                            <div class="btn-group ">
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
-                            </div>
-                            <small class="text-muted ">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
 
