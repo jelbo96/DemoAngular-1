@@ -9,12 +9,14 @@ import { RegisterComponent } from '../general/register/register.component';
 import { ProductsComponent } from '../general/products/products.component';
 import { NotFoundComponent } from '../general/not-found/not-found.component';
 import { HomeComponent } from '../general/home/home.component';
+import { PruebasComponent } from '../general/pruebas/pruebas.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, 
   { path: 'login', component: LoginComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'pruebas', component: PruebasComponent },
   {path: '**', component: NotFoundComponent },
 ];
 

@@ -1,0 +1,66 @@
+<hr>
+
+
+<form (ngSubmit)="insertar()">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" [(ngModel)]="inputEmail" class="form-control" id="inputEmail" aria-describedby="emailHelp" name="inputEmail">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword" name="inputPassword" [(ngModel)]="inputPassword">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+
+<hr>
+
+
+<h1> fecha: {{fecha}} </h1>
+
+
+<!-- Boton que cambia formato a dia -->
+<button class="btn btn-primary" (click)="cambiaFormato()">Cambia Formato</button>
+
+<h1> Numero: {{variable}} </h1>
+
+<button class="btn btn-primary" (click)="sumar()">Sumar</button>
+
+<hr>
+
+<div *ngIf="value">Mostrando contenido en if.</div>
+
+<button class="btn btn-primary" (click)="changeValue()">Mostrar/ocultar</button>
+
+
+<hr>
+
+<ul>
+    <li *ngFor="let day of dias; index as i">
+        {{day}} - {{i+1}} <button class="btn btn-primary" (click)="deleteDay(i)">Eliminar dia</button>
+    </li> <br />
+
+    <h4 *ngIf="deletedDay; else notDeleted">Ultimo elemento eliminado: {{deletedDay}}</h4>
+
+    <ng-template #notDeleted>
+        <h4>No hay elementos eliminados</h4>
+    </ng-template>
+
+
+</ul>
+
+
+
+
+<input type="text" class="form-control" id="inputDay" [(ngModel)]="inputDay" placeholder="Ingrese un dia">
+<button class="btn btn-primary" (click)="agregarDia()">Agregar dia</button>

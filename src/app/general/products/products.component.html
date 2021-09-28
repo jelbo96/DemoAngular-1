@@ -51,159 +51,34 @@
         <!-- Barra derecha (productos) -->
         <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3 g-3 ">
 
-            <!-- PRODUCTO -->
-            <div class=" col ">
-                <div class=" card shadow-sm ">
-                    <div class=" card-body ">
-                        <div class="img-container-card">
-                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
-                        </div>
 
-                        <p class=" card-text">Peluche homero 20cm.
-                        </p>
-                        <div class=" d-flex justify-content-between align-items-center ">
-                            <h4>$9.990</h4>
-                            <div class=" btn-group ">
-                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
-                                    carro</button>
+            <div *ngFor="let product of productsService.productos">
+
+                <!-- PRODUCTO -->
+                <div class=" col ">
+                    <div class=" card shadow-sm ">
+                        <div class=" card-body ">
+                            <div class="img-container-card">
+                                <img src={{product.imgSrc}} alt="logo-bolsa" class="img-product" />
+                            </div>
+
+                            <p class=" card-text">{{product.name}}
+                            </p>
+
+                            <!--  <span> {{categoriesService.categorie.frutas}} </span> -->
+
+                            <div class=" d-flex justify-content-between align-items-center ">
+                                <h4>${{product.price}}</h4>
+                                <div class=" btn-group ">
+                                    <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
+                                        carro</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- FIN PRODUCTO -->
 
 
-            <!-- PRODUCTO -->
-            <div class=" col ">
-                <div class=" card shadow-sm ">
-                    <div class=" card-body ">
-                        <div class="img-container-card">
-                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
-                        </div>
-
-                        <p class=" card-text">Peluche homero 20cm.
-                        </p>
-                        <div class=" d-flex justify-content-between align-items-center ">
-                            <h4>$9.990</h4>
-                            <div class=" btn-group ">
-                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
-                                    carro</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- FIN PRODUCTO -->
-
-
-            <!-- PRODUCTO -->
-            <div class=" col ">
-                <div class=" card shadow-sm ">
-                    <div class=" card-body ">
-                        <div class="img-container-card">
-                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
-                        </div>
-
-                        <p class=" card-text">Peluche homero 20cm.
-                        </p>
-                        <div class=" d-flex justify-content-between align-items-center ">
-                            <h4>$9.990</h4>
-                            <div class=" btn-group ">
-                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
-                                    carro</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- FIN PRODUCTO -->
-
-            <!-- PRODUCTO -->
-            <div class=" col ">
-                <div class=" card shadow-sm ">
-                    <div class=" card-body ">
-                        <div class="img-container-card">
-                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
-                        </div>
-
-                        <p class=" card-text">Peluche homero 20cm.
-                        </p>
-                        <div class=" d-flex justify-content-between align-items-center ">
-                            <h4>$9.990</h4>
-                            <div class=" btn-group ">
-                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
-                                    carro</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- FIN PRODUCTO -->
-
-            <!-- PRODUCTO -->
-            <div class=" col ">
-                <div class=" card shadow-sm ">
-                    <div class=" card-body ">
-                        <div class="img-container-card">
-                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
-                        </div>
-
-                        <p class=" card-text">Peluche homero 20cm.
-                        </p>
-                        <div class=" d-flex justify-content-between align-items-center ">
-                            <h4>$9.990</h4>
-                            <div class=" btn-group ">
-                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
-                                    carro</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- FIN PRODUCTO -->
-
-            <!-- PRODUCTO -->
-            <div class=" col ">
-                <div class=" card shadow-sm ">
-                    <div class=" card-body ">
-                        <div class="img-container-card">
-                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
-                        </div>
-
-                        <p class=" card-text">Peluche homero 20cm.
-                        </p>
-                        <div class=" d-flex justify-content-between align-items-center ">
-                            <h4>$9.990</h4>
-                            <div class=" btn-group ">
-                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
-                                    carro</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- FIN PRODUCTO -->
-
-            <!-- PRODUCTO -->
-            <div class=" col ">
-                <div class=" card shadow-sm ">
-                    <div class=" card-body ">
-                        <div class="img-container-card">
-                            <img src="/assets/img/peluche-homer-simpson.jpg" alt="logo-bolsa" class="img-product" />
-                        </div>
-
-                        <p class=" card-text">Peluche homero 20cm.
-                        </p>
-                        <div class=" d-flex justify-content-between align-items-center ">
-                            <h4>$9.990</h4>
-                            <div class=" btn-group ">
-                                <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
-                                    carro</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <!-- FIN PRODUCTO -->
 
