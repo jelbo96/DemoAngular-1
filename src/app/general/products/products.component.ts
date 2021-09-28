@@ -10,12 +10,17 @@ import { ProductsService } from '../../services/products.service';
 export class ProductsComponent implements OnInit {
   carrito: any = [];
   montoTotal: number = 0;
+  searchValue: string = '';
 
   constructor(
     public categoriesService: CategoriesService,
     public productsService: ProductsService
   ) {
     console.log('print desde component', productsService.productos);
+  }
+
+  buscar() {
+    console.log(this.searchValue);
   }
 
   appendToCart(product: any) {
