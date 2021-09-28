@@ -81,8 +81,8 @@
                                     <img src={{product.imgSrc}} alt="logo-bolsa" class="img-product" />
                                 </div>
 
-                                <p class=" card-text">{{product.name}}
-                                </p>
+                                <a [routerLink]="['/product', product.id]" class=" card-text">{{product.name}}
+                                </a>
 
                                 <!--  <span> {{categoriesService.categorie.frutas}} </span> -->
 

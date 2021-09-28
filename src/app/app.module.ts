@@ -15,6 +15,7 @@ import { AppRoutingModule } from '../app/app-routing/app-routing.module';
 import { NotFoundComponent } from './general/not-found/not-found.component';
 import { HomeComponent } from './general/home/home.component';
 import { PruebasComponent } from './general/pruebas/pruebas.component';
+import { ProductComponent } from './general/product/product.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PruebasComponent } from './general/pruebas/pruebas.component';
     NotFoundComponent,
     HomeComponent,
     PruebasComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
