@@ -27,6 +27,11 @@ body {
     width: 100%;
 }
 
+.name-delete-item {
+    display: flex;
+    flex-direction: row;
+}
+
 @media (max-width: 975px) {
     .container-products {
         flex-direction: column;

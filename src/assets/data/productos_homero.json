@@ -3,25 +3,29 @@
             "id": 1,
             "name": "Peluche homero 20cm",
             "price": 9990,
-            "imgSrc": "/assets/img/peluche-homer-simpson.jpg"
+            "imgSrc": "/assets/img/peluche-homer-simpson.jpg",
+            "stock": "10"
         },
         {
             "id": 2,
             "name": "Peluche bart 20cm",
             "price": 10990,
-            "imgSrc": "/assets/img/peluche-bart-simpson.jpg"
+            "imgSrc": "/assets/img/peluche-bart-simpson.jpg",
+            "stock": 10
         },
         {
             "id": 3,
             "name": "Peluche lisa 20cm",
             "price": 19990,
-            "imgSrc": "/assets/img/peluche-lisa-simpson.jpg"
+            "imgSrc": "/assets/img/peluche-lisa-simpson.jpg",
+            "stock": 10
         },
         {
             "id": 4,
             "name": "Peluche marge 20cm",
             "price": 29990,
-            "imgSrc": "/assets/img/peluche-marge-simpson.jpg"
+            "imgSrc": "/assets/img/peluche-marge-simpson.jpg",
+            "stock": 10
         }
 
     ]

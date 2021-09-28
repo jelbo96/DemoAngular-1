@@ -17,35 +17,41 @@
         <div class="flex-shrink-0 p-3 bg-white filters-aside">
             <a href=" / " class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom ">
 
-                <span class="fs-5 fw-semibold ">Filtrar por Categoria:</span>
+                <span class="fs-5 fw-semibold ">Carrito:</span>
             </a>
             <ul class="list-unstyled ps-0 ">
-                <li class="mb-1 ">
-                    <h6>
-                        Categoría 1
-                    </h6>
-                    <div class="sub-categories">
-                        <ul class=" btn-toggle-nav list-unstyled fw-normal pb-1 small ">
-                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 1</a></li>
-                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 2</a></li>
-                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 3</a></li>
-                        </ul>
-                    </div>
-                </li>
 
-                <li class="mb-1 ">
-                    <h6>
-                        Categoría 2
-                    </h6>
-                    <div class="sub-categories">
-                        <ul class=" btn-toggle-nav list-unstyled fw-normal pb-1 small ">
-                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 4</a></li>
-                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 5</a></li>
-                            <li><a href=" # " class=" link-dark rounded ">Subcategoria 6</a></li>
-                        </ul>
-                    </div>
-                </li>
+
+                <div class="sub-categories">
+                    <ul class=" btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+
+                        <div *ngFor="let item of carrito">
+
+                            <div class="name-delete-item">
+                                <h6>{{item.name}}</h6> <button class="btn btn-danger" (click)="deleteItem(item)">x</button>
+                            </div>
+                            <li> ${{item.price}} x {{item.cantidad}} </li>
+
+
+                        </div>
+
+
+
+
+                    </ul>
+                </div>
+
+                <h6>
+                    Monto total: ${{montoTotal}}
+                </h6>
+
+
+
+
             </ul>
+
+
+
         </div>
 
         <!-- Barra derecha (productos) -->
@@ -70,7 +76,7 @@
                             <div class=" d-flex justify-content-between align-items-center ">
                                 <h4>${{product.price}}</h4>
                                 <div class=" btn-group ">
-                                    <button type=" button " class=" btn btn-sm btn-outline-primary ">Agregar al
+                                    <button type=" button " (click)="appendToCart(product)" class=" btn btn-sm btn-outline-primary ">Agregar al
                                         carro</button>
                                 </div>
                             </div>
