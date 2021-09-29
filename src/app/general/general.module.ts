@@ -8,6 +8,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './products/products.component';
 import { PruebasComponent } from './pruebas/pruebas.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PruebasComponent } from './pruebas/pruebas.component';
     ProductComponent,
     ProductsComponent,
     PruebasComponent,
+    ModalComponent,
   ],
   exports: [
     HomeComponent,
@@ -23,6 +25,7 @@ import { PruebasComponent } from './pruebas/pruebas.component';
     ProductComponent,
     ProductsComponent,
     PruebasComponent,
+    ModalComponent,
   ],
   imports: [CommonModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
 })
