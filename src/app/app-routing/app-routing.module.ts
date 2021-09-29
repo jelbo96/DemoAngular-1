@@ -4,8 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 //Components
 import { AppComponent } from '../app.component';
-import { LoginComponent } from '../general/login/login.component';
-import { RegisterComponent } from '../general/register/register.component';
+import { LoginComponent } from '../login/login/login.component';
+import { RegistroComponent } from '../login/registro/registro.component';
 import { ProductsComponent } from '../general/products/products.component';
 import { NotFoundComponent } from '../general/not-found/not-found.component';
 import { HomeComponent } from '../general/home/home.component';
@@ -15,8 +15,8 @@ import { ProductComponent } from '../general/product/product.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegistroComponent },
   { path: 'products', component: ProductsComponent },
-  { path: 'register', component: RegisterComponent },
   { path: 'pruebas', component: PruebasComponent },
   { path: 'product/:id', component: ProductComponent },
 
