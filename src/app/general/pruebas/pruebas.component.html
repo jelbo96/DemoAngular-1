@@ -1,5 +1,16 @@
 <!-- Aqui se agregara el modal -->
-<app-modal [description]="'esta es la descripcion que va al componente'"></app-modal>
+<app-modal [description]="'esta es la descripcion que va al componente'" [titulo]="fecha" (newItemEvent)="addItem($event)"></app-modal>
+
+<div *ngFor="let item of items">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{item}}</h5>
+        </div>
+    </div>
+</div>
+
+
+
 
 <hr>
 

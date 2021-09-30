@@ -9,6 +9,7 @@ import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './products/products.component';
 import { PruebasComponent } from './pruebas/pruebas.component';
 import { ModalComponent } from './modal/modal.component';
+import { ModalCompraComponent } from './modal-compra/modal-compra.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ModalComponent } from './modal/modal.component';
     ProductsComponent,
     PruebasComponent,
     ModalComponent,
+    ModalCompraComponent,
   ],
   exports: [
     HomeComponent,

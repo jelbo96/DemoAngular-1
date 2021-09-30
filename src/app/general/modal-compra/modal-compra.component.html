@@ -1,0 +1,65 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Comprar
+</button>
+
+<!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h5 class="modal-title " id="exampleModalLabel">Resumen de Compra</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+
+                <!-- Aqui se muestra el form de direccion -->
+                <h6> Direccion de envio</h6>
+
+
+
+
+                <hr>
+                <!-- Aqui se muestra el form de medio de pago -->
+                <h6> Medio de pago</h6>
+
+                <hr>
+                <!-- Aqui se muestra un resumen -->
+                <h6> Resumen de la compra</h6>
+
+                <div class="container">
+
+                    <!-- Tabla de productList -->
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            <tr *ngFor="let product of productList">
+                                <td>{{product.name}}</td>
+                                <td>{{product.price | currency:'CLP':'symbol-narrow'}}</td>
+                                <td>{{product.cantidad}}</td>
+                                <td>{{product.price*product.cantidad | currency:'CLP':'symbol-narrow'}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h6> Total: {{montoTotal | currency:'CLP':'symbol-narrow'}} </h6>
+
+                </div>
+
+            </div>
+            <div class="modal-footer ">
+                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary ">Confirmar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
