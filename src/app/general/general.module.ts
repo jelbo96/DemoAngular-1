@@ -12,6 +12,7 @@ import { ModalComponent } from './modal/modal.component';
 import { ModalCompraComponent } from './modal-compra/modal-compra.component';
 import { PaymentComponent } from './payment/payment.component';
 import { DirectionComponent } from './direction/direction.component';
+import { PurchaseSummaryComponent } from './purchase-summary/purchase-summary.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DirectionComponent } from './direction/direction.component';
     ModalCompraComponent,
     PaymentComponent,
     DirectionComponent,
+    PurchaseSummaryComponent,
   ],
   exports: [
     HomeComponent,

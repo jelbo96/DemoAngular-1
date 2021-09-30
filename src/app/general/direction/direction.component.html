@@ -26,16 +26,17 @@
 
     </div>
 
-
     <div class="mb-3">
         <label for="codigoPostal" class="form-label">Codigo Postal: </label>
         <input [(ngModel)]="codigoPostal" name="codigoPostal" type="number" class="form-control" id="codigoPostal" aria-describedby="codigoPostalHelp">
 
     </div>
 
-
-
-
-
-    <button type="submit" class="btn btn-primary" id="registrar">Confirmar dirección</button> <br /> <br />
+    <button type="submit" class="btn btn-primary" id="registrar">Confirmar dirección</button> <span *ngIf="dataCompleta"> Datos OK! </span> <br /> <br />
 </form>
+
+<ul>
+    <li *ngFor="let err of errores; let i = index" class="text-danger">
+        {{err}}
+    </li>
+</ul>

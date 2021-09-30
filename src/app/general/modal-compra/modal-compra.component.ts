@@ -31,6 +31,9 @@ export class ModalCompraComponent implements OnInit {
     anoVencimiento: 0,
   };
 
+  validDirection = false;
+  validPayment = false;
+
   saveDirection(direccion: Direction) {
     this.direccion = direccion;
     console.log('Direccion padre', this.direccion);
@@ -39,6 +42,14 @@ export class ModalCompraComponent implements OnInit {
   savePayment(medioDePago: Payment) {
     this.medioDePago = medioDePago;
     console.log('Medio de pago padre', this.medioDePago);
+  }
+
+  validateDirection(valid: boolean) {
+    this.validDirection = valid;
+  }
+
+  validatePayment(valid: boolean) {
+    this.validPayment = valid;
   }
 
   constructor() {
