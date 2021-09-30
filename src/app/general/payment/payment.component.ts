@@ -73,6 +73,10 @@ export class PaymentComponent implements OnInit {
     }
   }
 
+  changeTipo(e: any) {
+    this.tipoTarjeta = e.target.value;
+  }
+
   constructor() {}
 
   ngOnInit(): void {}

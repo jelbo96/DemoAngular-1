@@ -34,6 +34,7 @@ export class DirectionComponent implements OnInit {
     /* Validar datos */
     this.errores = [];
     this.dataCompleta = false;
+    this.validDirectionEvent.emit(false);
 
     if (this.pais == '') {
       this.errores.push('El pais es requerido y al menos 3 caracteres');

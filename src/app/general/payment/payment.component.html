@@ -1,8 +1,16 @@
 <form (ngSubmit)="guardar()" class="col-md-6 form-register col-xs-12">
 
     <div class="mb-3">
-        <label for="tipoTarjeta" class="form-label"> Tipo de Tarjeta : </label>
-        <input [(ngModel)]="tipoTarjeta" name="tipoTarjeta" type="text" class="form-control" id="tipoTarjeta" aria-describedby="tipoTarjetaHelp">
+        <!--   <label for="tipoTarjeta" class="form-label"> Tipo de Tarjeta : </label>
+        <input [(ngModel)]="tipoTarjeta" name="tipoTarjeta" type="text" class="form-control" id="tipoTarjeta" aria-describedby="tipoTarjetaHelp"> -->
+
+
+        <select class="form-select" aria-label="Default select example" [(ngModel)]="tipoTarjeta" formControlName="tipoTarjeta" (change)="changeTipo($event)">
+            <option value="" disabled>Selecciona un tipo de tarjeta</option>
+            <option [ngValue]="'credito'" selected>Credito</option>
+            <option [ngValue]="'debito'">Debito</option>
+
+        </select>
     </div>
 
     <div class="mb-3">
@@ -12,13 +20,13 @@
 
     <div class="mb-3">
         <label for="numeroTarjeta" class="form-label"> Número de Tarjeta : </label>
-        <input [(ngModel)]="numeroTarjeta" name="numeroTarjeta" type="text" class="form-control" id="numeroTarjeta" aria-describedby="numeroTarjetaHelp">
+        <input [(ngModel)]="numeroTarjeta" name="numeroTarjeta" type="number" class="form-control" id="numeroTarjeta" aria-describedby="numeroTarjetaHelp">
     </div>
 
 
     <div class="mb-3">
         <label for="codigoSeguridad" class="form-label"> Codigo de Seguridad : </label>
-        <input [(ngModel)]="codigoSeguridad" name="codigoSeguridad" type="text" class="form-control" id="codigoSeguridad" aria-describedby="codigoSeguridadHelp">
+        <input [(ngModel)]="codigoSeguridad" name="codigoSeguridad" type="number" class="form-control" id="codigoSeguridad" aria-describedby="codigoSeguridadHelp">
     </div>
 
     <div class="mb-3">
@@ -28,7 +36,7 @@
 
     <div class="mb-3">
         <label for="anoVencimiento" class="form-label"> Año de Vencimiento : </label>
-        <input [(ngModel)]="anoVencimiento" name="anoVencimiento" type="text" class="form-control" id="anoVencimiento" aria-describedby="anoVencimientoHelp">
+        <input [(ngModel)]="anoVencimiento" name="anoVencimiento" type="number" class="form-control" id="anoVencimiento" aria-describedby="anoVencimientoHelp">
     </div>
 
     <button type="submit" class="btn btn-primary" id="registrar">Confirmar medio de pago</button> <span *ngIf="dataCompleta"> Datos OK! </span><br /> <br />
