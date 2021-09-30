@@ -1,0 +1,41 @@
+<form (ngSubmit)="guardar()" class="col-md-6 form-register col-xs-12">
+
+    <div class="mb-3">
+        <label for="pais" class="form-label">Pais : </label>
+        <input [(ngModel)]="pais" name="pais" type="text" class="form-control" id="pais" aria-describedby="paisHelp">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="calle" class="form-label"> Calle: </label>
+        <input [(ngModel)]="calle" name="calle" type="text" class="form-control" id="calle" aria-describedby="paisHelp">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="ciudad" class="form-label"> Ciudad: </label>
+        <input [(ngModel)]="ciudad" name="ciudad" type="text" class="form-control" id="ciudad" aria-describedby="ciudadHelp">
+
+    </div>
+
+
+    <!-- TODO cambiar por selector -->
+    <div class="mb-3">
+        <label for="region" class="form-label"> Región: </label>
+        <input [(ngModel)]="region" name="region" type="text" class="form-control" id="region" aria-describedby="regionHelp">
+
+    </div>
+
+
+    <div class="mb-3">
+        <label for="codigoPostal" class="form-label">Codigo Postal: </label>
+        <input [(ngModel)]="codigoPostal" name="codigoPostal" type="number" class="form-control" id="codigoPostal" aria-describedby="codigoPostalHelp">
+
+    </div>
+
+
+
+
+
+    <button type="submit" class="btn btn-primary" id="registrar">Confirmar dirección</button> <br /> <br />
+</form>

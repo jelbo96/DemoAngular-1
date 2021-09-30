@@ -1,8 +1,8 @@
 export interface Payment {
   tipoTarjeta: string;
   nombreTitular: string;
-  numeroTarjeta: string;
-  codigoSeguridad: string;
+  numeroTarjeta: number;
+  codigoSeguridad: number;
   fechaVencimiento: string;
-  añoVencimiento: string;
+  anoVencimiento: number;
 }

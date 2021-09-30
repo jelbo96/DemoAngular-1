@@ -10,6 +10,8 @@ import { ProductsComponent } from './products/products.component';
 import { PruebasComponent } from './pruebas/pruebas.component';
 import { ModalComponent } from './modal/modal.component';
 import { ModalCompraComponent } from './modal-compra/modal-compra.component';
+import { PaymentComponent } from './payment/payment.component';
+import { DirectionComponent } from './direction/direction.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { ModalCompraComponent } from './modal-compra/modal-compra.component';
     PruebasComponent,
     ModalComponent,
     ModalCompraComponent,
+    PaymentComponent,
+    DirectionComponent,
   ],
   exports: [
     HomeComponent,

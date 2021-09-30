@@ -1,4 +1,6 @@
 <!-- Button trigger modal -->
+
+<!-- TODO Deshabilitar si el montoTotal = 0 -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Comprar
 </button>
@@ -16,12 +18,17 @@
                 <!-- Aqui se muestra el form de direccion -->
                 <h6> Direccion de envio</h6>
 
-
-
+                <div class="container">
+                    <app-direction (saveDirectionEvent)="saveDirection($event)"></app-direction>
+                </div>
 
                 <hr>
                 <!-- Aqui se muestra el form de medio de pago -->
                 <h6> Medio de pago</h6>
+
+                <div class="container">
+                    <app-payment (savePaymentEvent)="savePayment($event)"></app-payment>
+                </div>
 
                 <hr>
                 <!-- Aqui se muestra un resumen -->
